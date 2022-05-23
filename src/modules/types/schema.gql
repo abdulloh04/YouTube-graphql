@@ -1,0 +1,28 @@
+scalar Upload
+scalar Any
+scalar Token
+
+type AuthResponse {
+    status: Int!
+    message: String!
+    data: Any
+    token: Token
+}
+
+
+## pagination input
+input Pagination {
+    page: Int
+    limit: Int
+}
+
+input Sort {
+    byDate: SortOptions
+    byName: SortOptions
+}
+
+## enum types
+enum SortOptions {
+    toLargest
+    toSmallest
+}

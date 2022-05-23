@@ -1,0 +1,12 @@
+type Mutation {
+    register(
+        file: Upload!
+        user_name: String!
+        password: String!
+    ): AuthResponse!
+
+    login(
+        user_name: String!
+        password: String!
+    ): AuthResponse!
+}

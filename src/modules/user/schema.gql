@@ -1,0 +1,30 @@
+type Query {
+    users(
+        pagination: Pagination
+        search: String
+        sort: Sort
+    ): [User!]!
+
+    videos(
+        search: String
+    ):  [Videos!]!
+    
+}
+
+type User {
+    user_id: ID!
+    user_name: String!
+    img: String!
+}
+
+type Videos {
+    video_name: String!
+    video_type: String!
+    video_size: String!
+    video_id: ID!
+    user_id: ID!
+    user_name: String,
+    view: String!
+    download: String!
+}
+

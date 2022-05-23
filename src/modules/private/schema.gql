@@ -1,0 +1,29 @@
+type Mutation {
+
+    addVideo (
+        file: Upload!
+        video_name: String!
+    ): AuthResponse!
+
+
+    changeVideo (
+        video_id: ID!
+        video_name: String!
+    ): AuthResponse!
+
+
+    deleteVideo (
+         video_id: ID!
+    ): AuthResponse!
+}
+
+type Query {
+    adminVideos: [Videos!]!
+}
+
+type Videos {
+    video_id: ID!
+    video_name: String!
+    video_type: String!
+    user_id: ID!
+}

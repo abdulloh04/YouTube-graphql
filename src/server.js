@@ -14,7 +14,7 @@ import queryParser from '../helpers/queryParser.js'
 import fs from 'fs'
 
 
-process.HOST = 'http://localhost:4000'
+process.HOST =  'https://youtube-graphql04.herokuapp.com/'
 
 !async function () {
   const app = express()

@@ -1,11 +1,13 @@
 import pg from 'pg'
 
+// postgres://ueoezjwg:h1j1QfBIieYcMMfA_BR8RBHJzGDcBvg-@arjuna.db.elephantsql.com/ueoezjwg
+
 const pool = new pg.Pool({
     port: 5432,
-    host: 'heffalump.db.elephantsql.com',
-    user: 'menzpgqm',
-    password: 'wyDrnrB6b0dCnUPq1zzdfs525fV-BXpp',
-    database: 'menzpgqm',
+    host: 'arjuna.db.elephantsql.com',
+    user: 'ueoezjwg',
+    password: 'h1j1QfBIieYcMMfA_BR8RBHJzGDcBvg-',
+    database: 'ueoezjwg',
 })
     
 async function db (query, ...params) {
